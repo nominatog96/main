@@ -782,10 +782,10 @@ html,body{background:#06363D}
 .fr2 .who3 .nn .big{font-size:54px}
 .fr2 .who3 .nn p{font-size:19px;color:var(--slate);margin-top:4px;line-height:1.3;max-width:170px}
 .fr2 .af{grid-template-columns:1fr 46px 1fr 46px 1fr 46px 1.25fr}
-.fr2 .opt3m{grid-column:1/-1;display:flex;gap:12px;margin-top:12px;align-items:center}
-.fr2 .opt3m>span{font-weight:700;font-size:19px;color:var(--teal);white-space:nowrap}
-.fr2 .opt3m div{flex:1;font-size:19px;line-height:1.3;color:var(--ink);background:rgba(255,255,255,.7);border-radius:10px;padding:8px 14px;border-left:4px solid var(--c-agr)}
-.fr2 .opt3m div b{font-family:var(--fh);font-weight:600}
+.opt3m{grid-column:1/-1;display:flex;gap:12px;margin-top:12px;align-items:center}
+.opt3m>span{font-weight:700;font-size:19px;color:var(--teal);white-space:nowrap}
+.opt3m div{flex:1;font-size:19px;line-height:1.3;color:var(--ink);background:rgba(255,255,255,.7);border-radius:10px;padding:8px 14px;border-left:4px solid var(--c-agr)}
+.opt3m div b{font-family:var(--fh);font-weight:600}
 
 /* ativos: do campo ao sistema do cliente */
 #ativos-arq{padding-top:72px}
@@ -837,6 +837,96 @@ img.nplay{display:block}
 #capa img.sig{width:300px;margin:-30px 0 0 -40px}
 #fim img.sigh{width:1300px;max-width:100%}
 #servicos .cityw iframe{color-scheme:light}
+
+/* ===== v8 ===== */
+/* serviços: um slide por serviço, resumo + arquitetura */
+.lbl.svn{display:flex;align-items:center;gap:12px;margin-bottom:14px;font-size:24px}
+.lbl.svn i{width:16px;height:16px;border-radius:50%;background:var(--k);flex:none}
+.svx{display:grid;grid-template-columns:1fr auto;gap:56px;align-items:center;margin-top:22px}
+.svx .rs{font-size:27px;line-height:1.45;color:var(--ink);max-width:980px}
+.svx .nn{display:flex;gap:44px}
+.svx .nn .big{font-size:60px;white-space:nowrap}
+.svx .nn p{font-size:20px;color:var(--slate);margin-top:6px;max-width:250px;line-height:1.3}
+.svaf{flex:1;min-height:0;margin-top:28px;display:flex;flex-direction:column}
+.svaf .af{flex:1;min-height:0;grid-template-columns:1fr 46px 1fr 46px 1fr 46px 1fr}
+.svaf .af:has(> :nth-child(9)){grid-template-columns:1fr 46px 1fr 46px 1fr 46px 1fr 46px 1fr}
+.svaf .af:has(> .opt3m){grid-template-rows:1fr auto}
+.svaf .sg li{font-size:22px}
+.svaf .sg b.hd{font-size:26px}
+.af .fld3{display:flex;flex-direction:column;gap:12px;min-height:0}
+.af .fld3 .sg{flex:1}
+.opt3m{grid-column:1/-1;display:flex;gap:12px;margin-top:14px;align-items:center}
+.opt3m>span{font-weight:700;font-size:21px;color:var(--teal);white-space:nowrap}
+.opt3m div{flex:1;font-size:21px;line-height:1.3;color:var(--ink);background:rgba(255,255,255,.75);border-radius:10px;padding:10px 16px;border-left:4px solid var(--c-agr)}
+.opt3m div b{font-family:var(--fh);font-weight:600}
+
+/* slide 4: títulos das evidências em destaque */
+.ledger .row4{padding:16px 0}
+.ledger .row4 .big{font-size:92px}
+.ledger .k{display:block;font-family:var(--fh);font-weight:600;font-size:31px;letter-spacing:0;text-transform:none;color:var(--ink);line-height:1.2}
+.ledger p{font-size:25px;margin-top:4px}
+
+/* slide 5: tabela hoje x com Vivo + Nouvenn */
+.cmp2{display:grid;grid-template-columns:330px 1fr 1fr;gap:12px 16px;margin-top:40px}
+.cmp2 .hd1,.cmp2 .hd2{font-family:var(--fh);font-weight:600;font-size:32px;padding:6px 26px 8px}
+.cmp2 .hd1{color:#F2C27A}
+.cmp2 .hd2{color:#0A5F6B;background:#B5F5EE;border-radius:12px 12px 0 0;padding-top:12px}
+.cmp2 .k{display:flex;align-items:center;gap:16px;font-family:var(--fh);font-weight:600;font-size:30px;color:#fff}
+.cmp2 .k svg{font-size:34px;color:#B5F5EE}
+.cmp2 .c1{font-size:28px;line-height:1.35;color:#F3E3CA;background:rgba(4,40,46,.35);border-radius:10px;padding:18px 26px;display:flex;align-items:center}
+.cmp2 .c2{font-size:28px;line-height:1.35;font-weight:700;color:#0E2F38;background:#fff;border-radius:10px;padding:18px 26px;display:flex;align-items:center;gap:14px;box-shadow:0 14px 30px -18px rgba(0,0,0,.5)}
+.cmp2 .c2 svg{font-size:30px;color:#00897F;flex:none}
+
+/* slide 7: mapa maior, sem o retângulo */
+.nmap .mapbox{left:520px;top:96px;width:880px;height:970px}
+
+/* slide 10: lista enxuta e vertical, cidade maior */
+#servicos .head{width:420px}
+#servicos .head .t{font-size:44px!important}
+#servicos .head .lead{font-size:22px!important}
+#servicos .svl{top:400px;width:340px;gap:10px}
+.svl button{padding:12px 16px;gap:12px;grid-template-columns:16px 1fr}
+.svl button i{width:14px;height:14px}
+.svl button b{font-size:21px;line-height:1.25}
+#servicos .cityw{left:420px;right:0;top:30px;width:auto;height:960px}
+
+/* slide 19: texto distribuído ao longo da imagem, sem componentes */
+.cpane{grid-template-columns:560px 1fr;gap:60px;margin-top:28px}
+.cpane>div:last-child{display:flex;flex-direction:column;padding-top:12px;min-height:0}
+.cpane h3{font-size:40px;margin-top:6px}
+.cpane .ucx{flex:1;justify-content:space-evenly;margin-top:16px}
+.cpane .ucx section{padding:16px 0}
+.cpane .ucx p{font-size:26px}
+.cpane .ucx .k{font-size:24px}
+
+/* slide 23: NOUMIND com fontes maiores */
+#noumind .apps b,#noumind .mods b{font-size:27px}
+#noumind .apps span,#noumind .mods span{font-size:21px}
+#noumind .mods .tg{font-size:17px}
+#noumind .proto em{font-size:17px}
+#noumind .mindbar .lg small{font-size:23px;max-width:620px}
+#noumind .devs2 div{font-size:24px}
+#noumind .pillars div{font-size:24px}
+#noumind .ecocap{font-size:26px}
+
+/* slide 26: ativos com fontes maiores */
+#ativos-arq .af .sg li{font-size:22px}
+#ativos-arq .af .sg b.hd{font-size:26px}
+#ativos-arq .af .sg .tg{font-size:18px}
+#ativos-arq .aa .fldc .gp b{font-size:24px}
+#ativos-arq .aa .fldc .gp span{font-size:21px}
+#ativos-arq .aa .cli .sg b.hd{font-size:25px}
+#ativos-arq .af .chips span{font-size:19px}
+#ativos-arq .out4 div{font-size:24px}
+#ativos-arq .aa{margin-top:22px}
+
+/* slide 30: exercício com fontes maiores */
+.qz .scn{font-size:31px}
+.qz .qq{font-size:38px}
+.qz .opt{font-size:26px}
+.qz .qf{font-size:29px}
+.qz .qn{font-size:27px}
+.qz .score .mut{font-size:26px!important}
 </style>
 </head>
 <body>
@@ -886,64 +976,18 @@ img.nplay{display:block}
 <section class="s" id="roteiro" data-block="0" data-title="Agenda do dia">
   <h2 class="t rv">Agenda do dia</h2>
   <table class="ag rv" style="--d:1">
-    <tr><td class="agn">01</td><td>Contexto de 2026</td><td>Como a conta é dividida hoje e quatro mudanças que o cliente já sente</td></tr>
-    <tr><td class="agn">02</td><td>Quem é a Nouvenn</td><td>O que já operamos, com quem, e a estrutura própria de campo</td></tr>
-    <tr><td class="agn">03</td><td>O setor</td><td>Tamanho do mercado, dados de edifícios e quem decide a compra</td></tr>
-    <tr><td class="agn">04</td><td>Casos de uso</td><td>Cinco situações, o que instalamos em cada uma e o exercício de rateio</td></tr>
-    <tr><td class="agn">05</td><td>Como entregamos</td><td>Dispositivo, rede Vivo e plataforma, sem jargão</td></tr>
-    <tr><td class="agn">06</td><td>A oportunidade</td><td>Frases do cliente, seis perguntas, checklist e como acionar o BDM</td></tr>
+    <tr><td class="agn">01</td><td>Quem é a Nouvenn</td><td>O que já operamos, com quem, e os cinco serviços com as suas arquiteturas</td></tr>
+    <tr><td class="agn">02</td><td>Contexto, mercado e setor</td><td>Como a conta é dividida hoje, o que mudou em 2026, o tamanho do mercado e quem decide</td></tr>
+    <tr><td class="agn">03</td><td>Casos de uso</td><td>Cinco situações, o que instalamos em cada uma e o exercício de rateio</td></tr>
+    <tr><td class="agn">04</td><td>Como entregamos</td><td>Dispositivo, rede Vivo e plataforma, sem jargão</td></tr>
+    <tr><td class="agn">05</td><td>A oportunidade</td><td>Frases do cliente, seis perguntas, checklist e ficha para o BDM</td></tr>
   </table>
   <aside class="notes">Combinar com a sala: no fim, cada vendedor sai sabendo reconhecer a dor, fazer seis perguntas e acionar o BDM. Avisar que haverá dois exercícios.</aside>
 </section>
 
-<section class="s dark" id="tese" data-block="0" data-title="Quem paga a conta hoje">
-  <img class="wm" src="assets/symbol-white.webp" alt="">
-  <h2 class="t rv">Hoje a conta chega inteira e é dividida <b>por estimativa</b></h2>
-  <p class="lead rv" style="--d:1;margin-top:18px">Exemplo de um shopping de 180 lojas. É assim na maioria dos empreendimentos de varejo e multiuso.</p>
-  <div class="flow3 rv" style="--d:2">
-    <div><div class="big">1</div><p class="mut" style="margin-top:10px">hidrômetro da concessionária para o empreendimento inteiro</p></div>
-    <div class="arr">→</div>
-    <div><div class="big">180</div><p class="mut" style="margin-top:10px">lojas consumindo de formas muito diferentes</p></div>
-    <div class="arr">→</div>
-    <div><div class="big" style="color:#F2C27A">m²</div><p class="mut" style="margin-top:10px">critério do rateio: a área de cada loja, não o que ela gastou</p></div>
-  </div>
-  <div class="who2 rv" style="--d:3">
-    <div><img src="assets/ph-aerial.webp" alt="Torres em construção" style="object-position:50% 12%"><div class="tx"><div class="h"><svg class="i ic"><use href="#i-crane"/></svg>Na obra</div><p>A construtora paga o canteiro inteiro e divide entre frentes e empreiteiros <b>por estimativa</b>.</p></div></div>
-    <div><img src="assets/ph-meters.webp" alt="Hidrômetros de um empreendimento" style="object-position:50% 40%"><div class="tx"><div class="h"><svg class="i ic"><use href="#i-store"/></svg>No imóvel em operação</div><p>A administradora paga o empreendimento inteiro e divide <b>pela área de cada unidade</b>.</p></div></div>
-  </div>
-  <p class="t rv" style="--d:4;margin-top:auto;font-size:36px;max-width:1680px">Nos dois casos, ninguém responde pela diferença entre o que gastou e o que pagou. Sem medir, não há como provar quem gastou nem achar o vazamento.</p>
-  <aside class="notes">Esta é a proposta de valor do deck, dita com um exemplo concreto: um hidrômetro, 180 lojas, rateio por m².
-Embaixo, os dois lados do mesmo problema: na obra, a construtora divide o canteiro por estimativa; no imóvel em operação, a administradora divide por área.
-Frase para o vendedor repetir ao cliente: "ninguém responde pela diferença entre o que gastou e o que pagou".</aside>
-</section>
-
-<section class="s mist" id="contexto" data-block="0" data-title="O que mudou em 2026">
-  <h2 class="t rv">O que mudou em 2026 para quem paga água e energia</h2>
-  <div class="ledger"><div class="row4 rv" style="--d:1"><div class="big"><span data-count="9.4" data-dec="1" data-prefix="+">+9,4</span>%</div><div><span class="k">Tarifa de energia</span><p>de reajuste médio projetado pela ANEEL em 2026. A inflação esperada é de cerca de 5%.</p><span class="f">ANEEL, InfoTarifas de set/2026</span></div></div><div class="row4 rv" style="--d:2"><div class="big"><span data-count="19.4" data-dec="1">19,4</span>%</div><div><span class="k">Água em São Paulo</span><p>era o nível do Cantareira em jan/2026, o menor em 10 anos. A Sabesp reduziu a pressão à noite e reajustou a tarifa em 6,11%.</p><span class="f">Sabesp, Band, Poder360</span></div></div><div class="row4 rv" style="--d:3"><div class="big">nov/27</div><div><span class="k">Mercado livre de energia</span><p>A partir de 25/11/2027, o comércio em baixa tensão pode escolher o fornecedor. Para negociar, o cliente precisa conhecer o próprio consumo.</p><span class="f">Lei 15.269/2025 e Decreto 13.097/2026</span></div></div><div class="row4 rv" style="--d:4"><div class="big"><span data-count="471.8" data-dec="1">471,8</span> mil</div><div><span class="k">Lançamentos imobiliários</span><p>unidades lançadas em 2025, recorde. Pela Lei 13.312, cada unidade nova já sai com hidrômetro próprio, lido a pé.</p><span class="f">CBIC, Indicadores Imobiliários 4T25</span></div></div></div>
-  <img class="isl rv" style="--d:5" src="assets/isl-cidade.webp" alt="Ilustração isométrica de bairro com prédios, rede elétrica e energia solar">
-  <aside class="notes">Aqui se fala do mundo do cliente, não da Nouvenn.
-Energia: a ANEEL subiu a projeção de 8% (março) para 9,4% (setembro).
-Mercado livre: 92% dos shoppings já compram energia livre. O que muda em 2027 é para o lojista de rua e o pequeno comércio.
-Lei 13.312: obriga o hidrômetro individual, não a leitura remota. É aí que entra a conectividade Vivo.</aside>
-</section>
-<section class="s dark" id="hoje-depois" data-block="0" data-title="Hoje e com medição">
-  <h2 class="t rv">O que muda no dia a dia quando cada ponto é medido</h2>
-  <table class="cmp rv" style="--d:1">
-    <thead><tr><th></th><th>Hoje</th><th>Com medição Nouvenn e rede Vivo</th></tr></thead>
-    <tbody>
-      <tr><td>Vazamento</td><td>Aparece na fatura do mês seguinte</td><td>Aparece no dia seguinte, no ponto exato</td></tr>
-      <tr><td>Rateio</td><td>Pela área de cada loja, e o lojista contesta</td><td>Pelo consumo medido, com histórico diário</td></tr>
-      <tr><td>Manutenção</td><td>A falha é descoberta pelo usuário</td><td>Alerta antes da parada, no equipamento certo</td></tr>
-      <tr><td>Leitura</td><td>Uma pessoa passa de porta em porta, uma vez por mês</td><td>Remota, a cada 15 minutos, pela rede celular</td></tr>
-      <tr><td>Valor do imóvel</td><td>Condomínio alto, sem como provar eficiência</td><td>Consumo por loja para mostrar ao investidor</td></tr>
-    </tbody>
-  </table>
-  <aside class="notes">Pergunta para a sala: "Qual dessas linhas o seu cliente sente hoje?" Anotar as respostas; elas voltam no bloco de casos de uso.</aside>
-</section>
-
-<!-- ================= BLOCO 1 ================= -->
+<!-- ================= BLOCO 1 · QUEM É A NOUVENN ================= -->
 <section class="s div2" id="b1" data-block="1" data-title="Bloco 1 · Quem é a Nouvenn">
-  <div class="txt"><span class="n rv">Bloco 1 de 5</span><h1 class="rv" style="--d:1">Quem é a Nouvenn</h1><p class="rv" style="--d:2">Uma empresa de IoT com dispositivo, plataforma e equipe de campo próprios.</p></div>
+  <div class="txt"><span class="n rv">Bloco 1 de 5</span><h1 class="rv" style="--d:1">Quem é a Nouvenn</h1><p class="rv" style="--d:2">Uma empresa de IoT com dispositivo, plataforma e equipe de campo próprios, e cinco serviços em operação.</p></div>
   <div class="fr rv" style="--d:1"><img class="f" src="assets/ph-worker.webp" alt="Técnica operando painel elétrico com tablet">
     <img class="sqo" src="assets/sq-c.webp" alt="" style="right:-60px;top:-50px;width:330px">
     <img class="sqo" src="assets/sq-a.webp" alt="" style="right:120px;bottom:-40px;width:420px;opacity:.9">
@@ -956,7 +1000,7 @@ Lei 13.312: obriga o hidrômetro individual, não a leitura remota. É aí que e
   <div class="nmap">
     <div class="mapbox rv" id="mapBox"><svg id="mapSvg" role="img" aria-label="Mapa das Américas com as praças Nouvenn"></svg><div class="tip" id="mTip"></div></div>
     <div class="inset rv" style="--d:2"><span>Portugal</span><svg id="mapIb" role="img" aria-label="Praças em Portugal"></svg></div>
-    <div class="pin123 rv" style="--d:7"><b>123</b><span>praças com contrato, nota fiscal ou piloto homologado, em <b id="mUF" style="font-size:21px;margin:0;font-family:var(--fb)">21</b> estados e 7 países</span></div>
+    
     <div class="ns l rv" style="--d:1;top:210px"><div class="big">+<span data-count="300">300</span></div><p>cidades com dispositivos Nouvenn, em 9 países das Américas</p></div><div class="ns l rv" style="--d:2;top:510px"><div class="big">+<span data-count="11">11</span> mi</div><p>pessoas atendidas por serviços que dependem dos nossos equipamentos</p></div><div class="ns l rv" style="--d:3;top:810px"><div class="big">R$ <span data-count="40">40</span> mi</div><p>de faturamento, com desenvolvimento em parceria com Senai CIMATEC e INATEL</p></div><div class="ns r rv" style="--d:4;top:210px"><div class="big"><span data-count="26">26</span> UF</div><p>e o DF com monitoramento de consumo de água, além de 7 países da América Latina</p></div><div class="ns r rv" style="--d:5;top:510px"><div class="big">+<span data-count="3">3</span> mi</div><p>pessoas com iluminação pública telegerida em mais de 30 PPPs</p></div><div class="ns r rv" style="--d:6;top:810px"><div class="big">+<span data-count="7">7</span> mi</div><p>pessoas atendidas por saneamento telecomandado em 1.700 localidades do Paraná</p></div>
   </div>
   <aside class="notes">Números do deck institucional da Nouvenn, confirmados em 14/10/2026: +30 PPPs de iluminação pública e 1.700 localidades atendidas no Paraná (localidades, não municípios).
@@ -974,16 +1018,16 @@ Mensagem: onde o cliente da Vivo estiver, provavelmente já existe operação No
 Passe o mouse ou clique em cada cliente para trocar a ilustração.</aside>
 </section>
 <section class="s dark vv" id="estrutura" data-block="1" data-title="Estrutura própria">
-  <h2 class="t rv">A Vivo não precisa juntar fornecedores: <b>a Nouvenn responde</b> do projeto ao campo</h2>
+  <h2 class="t rv">Os diferenciais que a NOUVENN pode oferecer à VIVO: <b><i>Single Point of Contact</i> &amp; <i>Trusted Advisor</i></b></h2>
   <div class="ph3">
     <figure class="rv" style="--d:1"><img src="assets/ph-noc.webp" alt="Centro de operações"><figcaption><div class="h">Operação e campo próprios</div><p class="mut">Instalação, manutenção e suporte feitos pela equipe da Nouvenn, sem terceirizar a responsabilidade.</p></figcaption></figure>
     <figure class="rv" style="--d:2"><img src="assets/ph-engineers.webp" alt="Engenheiros de desenvolvimento" style="object-position:50% 30%"><figcaption><div class="h">Engenharia e desenvolvimento</div><p class="mut">Hardware, firmware e software feitos em casa, para integrar o que o cliente já tem.</p></figcaption></figure>
     <figure class="rv" style="--d:3"><img src="assets/ph-enel.webp" alt="Prêmio Parceiro Responsável ENEL"><figcaption><div class="h">Prêmio ENEL 2023/2024</div><p class="mut">Parceiro Responsável, categoria Sustentabilidade e Inovação, pela telegestão de iluminação pública.</p></figcaption></figure>
   </div>
-  <aside class="notes">Mensagem para o vendedor: dispositivo, plataforma e campo vêm da Nouvenn; conectividade e relação com o cliente ficam com a Vivo.
+  <aside class="notes">Single Point of Contact: um só responsável do projeto ao campo. Trusted Advisor: a Nouvenn orienta a melhor solução, com engenharia própria.
+Mensagem para o vendedor: dispositivo, plataforma e campo vêm da Nouvenn; conectividade e relação com o cliente ficam com a Vivo.
 Se perguntarem: a Nouvenn atende mais de 30 PPPs de iluminação pública.</aside>
 </section>
-
 <section class="s" id="servicos" data-block="1" data-title="Serviços Nouvenn">
   <div class="head">
     <h2 class="t rv" style="font-size:52px">Cinco serviços, uma mesma plataforma</h2>
@@ -1008,14 +1052,33 @@ Se perguntarem: a Nouvenn atende mais de 30 PPPs de iluminação pública.</asid
   <aside class="notes">A mesma cidade 3D do painel comercial Nouvenn. Clique nos pontos ou na lista: cada serviço mostra o que faz, os produtos e um cliente em operação.
 As duas primeiras linhas (utilidades e ativos) são o centro da conversa de real estate; iluminação e agroclimático servem a outros vendedores da Vivo e têm slides próprios na sequência.</aside>
 </section>
-
-<section class="s" id="frentes" data-block="1" data-title="Iluminação pública e agroclimático">
-  <h2 class="t rv" style="font-size:50px">Duas frentes com clientes em operação para outros vendedores Vivo</h2>
-  <div class="fr2">
-    <div class="band2 rv" style="--d:1">
-      <div class="who3"><span class="lbl">Para quem atende prefeituras e PPPs</span><h3>Telegestão de iluminação pública</h3>
-        <div class="nn"><div><div class="big">+30</div><p>PPPs de iluminação atendidas</p></div><div><div class="big">+3 mi</div><p>pessoas com iluminação telegerida</p></div></div></div>
-      <div class="af" style="--k:var(--c-ilu)">
+<section class="s tint2" id="svc-util" data-block="1" data-title="Serviço 1 · Monitoramento e gestão de utilidades">
+  <span class="lbl svn rv"><i style="--k:var(--c-uti)"></i>Serviço 1 de 5 · Monitoramento e gestão de utilidades</span>
+  <h2 class="t rv" style="font-size:48px">Água, gás e energia lidos à distância, a partir do medidor que o cliente já tem</h2>
+  <div class="svx rv" style="--d:1"><p class="rs">O medidor passa a enviar a leitura sozinho pela rede Vivo. A plataforma mostra o consumo de cada ponto, avisa vazamento no dia seguinte e gera o rateio pelo que cada um gastou.</p><div class="nn"><div><div class="big">+25 mil</div><p>unidades com telemetria de água na Sabesp</p></div><div><div class="big">26 UF</div><p>e o DF com monitoramento de consumo de água</p></div></div></div>
+  <div class="svaf rv" style="--d:2">
+    <div class="af" style="--k:var(--c-uti)">
+        <div class="sg"><svg class="ai" viewBox="0 0 48 48"><circle cx="24" cy="24" r="17"/><path d="M24 24l7-7"/><rect x="17" y="29" width="14" height="5" rx="1"/><path d="M14 16h3M31 16h3"/></svg><span class="tg">No imóvel</span><b class="hd">Medidor que já existe</b><ul><li>Hidrômetro, gás ou energia</li><li>Saída de pulso, Modbus ou nenhuma</li></ul></div>
+        <div class="cn"></div>
+        <div class="sg"><svg class="ai" viewBox="0 0 48 48"><rect x="10" y="10" width="28" height="30" rx="4"/><path d="M17 4v6M31 4v6"/><circle cx="24" cy="25" r="6"/><path d="M33 7a6 6 0 0 1 6 6"/></svg><span class="tg">Solução Nouvenn</span><b class="hd">SPC · AquaCap · NIC</b><ul><li>SPC lê o pulso do medidor</li><li>AquaCap lê o movimento, sem trocar o medidor</li><li>NIC vai dentro do medidor novo</li></ul></div>
+        <div class="cn"></div>
+        <div class="sg net"><svg class="ai" viewBox="0 0 48 48"><path d="M24 20 16 44M24 20l8 24M19 34h10M18 39h12"/><circle cx="24" cy="17" r="2.5"/><path d="M16.5 10a10 10 0 0 0 0 14M31.5 10a10 10 0 0 1 0 14M11 5a17 17 0 0 0 0 24M37 5a17 17 0 0 1 0 24"/></svg><span class="tg">Conectividade</span><b class="hd">Rede Vivo</b><div class="chips"><span>NB&#8209;IoT</span><span>LTE&#8209;M</span></div><ul><li>Sem cabo e a bateria</li></ul></div>
+        <div class="cn"></div>
+        <div class="sg plat"><svg class="ai" viewBox="0 0 48 48"><rect x="5" y="8" width="38" height="25" rx="2.5"/><path d="M2 39h44M10 27l7-8 6 5 8-10 7 6"/></svg><span class="tg">Plataforma</span><b class="hd">SPC Manager</b><ul><li>Consumo por ponto, a cada 15 min</li><li>Alerta de vazamento e de fraude</li></ul></div>
+        <div class="cn"></div>
+        <div class="sg"><svg class="ai" viewBox="0 0 48 48"><path d="M11 5h26v38l-5-3-4 3-4-3-4 3-4-3-5 3z"/><path d="M17 15h14M17 22h14M17 29h8"/></svg><span class="tg">Para o cliente</span><b class="hd">Rateio e gestão</b><ul><li>Rateio pelo consumo medido</li><li>Relatórios e integração por API</li></ul></div>
+      </div>
+  </div>
+  <aside class="notes">Serviço de entrada para real estate: é o que resolve o rateio e o vazamento.
+Clientes em operação: Sabesp (mais de 25 mil unidades), Sanepar, Gasmig, Sulgas e Ultragaz.
+A forma de leitura depende do medidor: SPC se tem pulso, AquaCap se não tem, NIC se o medidor é novo. Cada ponto é uma linha Vivo NB-IoT ou LTE-M.</aside>
+</section>
+<section class="s tint2" id="svc-ilum" data-block="1" data-title="Serviço 2 · Telegestão de iluminação pública">
+  <span class="lbl svn rv"><i style="--k:var(--c-ilu)"></i>Serviço 2 de 5 · Telegestão de iluminação pública</span>
+  <h2 class="t rv" style="font-size:48px">Liga, dimeriza e acusa a lâmpada apagada sem ronda noturna</h2>
+  <div class="svx rv" style="--d:1"><p class="rs">Um controlador em cada luminária conversa com a plataforma. A prefeitura ou a concessionária da PPP vê a rede inteira num mapa, programa a dimerização e recebe a falha em tempo real.</p><div class="nn"><div><div class="big">+30</div><p>PPPs de iluminação pública atendidas</p></div><div><div class="big">+3 mi</div><p>pessoas com iluminação telegerida</p></div></div></div>
+  <div class="svaf rv" style="--d:2">
+    <div class="af" style="--k:var(--c-ilu)">
         <div class="sg"><svg class="ai" viewBox="0 0 48 48"><path d="M14 44V12a6 6 0 0 1 6-6h12"/><path d="M28 6h10l-3 6h-6z"/><path d="M33 15v3M29 17l-2 2M37 17l2 2"/><path d="M8 44h14"/></svg><span class="tg">Na rua</span><b class="hd">Luminária com SLC</b><ul><li>Controlador na própria luminária</li><li>Liga, desliga e dimeriza</li></ul></div>
         <div class="cn"></div>
         <div class="sg net"><svg class="ai" viewBox="0 0 48 48"><path d="M24 20 16 44M24 20l8 24M19 34h10M18 39h12"/><circle cx="24" cy="17" r="2.5"/><path d="M16.5 10a10 10 0 0 0 0 14M31.5 10a10 10 0 0 1 0 14M11 5a17 17 0 0 0 0 24M37 5a17 17 0 0 1 0 24"/></svg><span class="tg">Conectividade</span><b class="hd">Rede Vivo NB&#8209;IoT</b><div class="chips"><span>NB-IoT</span><span>Mesh Zigbee</span><span>Mesh Wi-SUN</span></div></div>
@@ -1024,11 +1087,48 @@ As duas primeiras linhas (utilidades e ativos) são o centro da conversa de real
         <div class="cn"></div>
         <div class="sg"><svg class="ai" viewBox="0 0 48 48"><circle cx="24" cy="24" r="17"/><path d="M24 13v11l7 5"/><path d="M8 24H4M44 24h-4M24 8V4"/></svg><span class="tg">Operação da prefeitura</span><ul><li>Lâmpada apagada aparece no mapa, sem ronda noturna</li><li>Consumo e qualidade de energia por ponto</li><li>Histórico e relatórios da PPP</li></ul></div>
       </div>
+  </div>
+  <aside class="notes">Para o vendedor que atende prefeituras e concessionárias de PPP. Com NB-IoT, cada controlador de luminária (SLC) é uma linha Vivo.
+Onde não há cobertura, as opções em malha (Zigbee e Wi-SUN) usam um gateway com conexão celular.
+Prêmio Parceiro Responsável ENEL 2023/2024 e atestado de capacidade técnica da ENEL X (Luz de Caruaru).</aside>
+</section>
+<section class="s tint2" id="ativos-arq" data-block="1" data-title="Ativos: do campo ao sistema do cliente">
+  <span class="lbl svn rv"><i style="--k:var(--c-ati)"></i>Serviço 3 de 5 · Monitoramento e automação de ativos</span>
+  <h2 class="t rv" style="font-size:48px">Do sinal de campo ao SCADA e ao NOC do cliente, com o quadro inteligente Nouvenn</h2>
+  <div class="af aa rv" style="--d:1;--k:var(--c-ati)">
+    <div class="sg fldc"><span class="tg">No campo</span><b class="hd">O que o cliente já tem</b>
+      <div class="gp"><b>Sensores e sinais</b><span>pressão, nível, temperatura, corrente; 4-20 mA e digitais</span></div>
+      <div class="gp"><b>Equipamentos</b><span>multimedidor, inversor, soft starter, CLP, RS-485 e Modbus</span></div>
+      <div class="gp"><b>Cargas e circuitos</b><span>contator, alimentadores e iluminação, comandados por relé</span></div>
     </div>
-    <div class="band2 rv" style="--d:2">
-      <div class="who3"><span class="lbl">Para quem atende agro, rodovias e rios</span><h3>Monitoramento agroclimático</h3>
-        <div class="nn"><div><div class="big">201</div><p>cidades do Paraná com alerta de rios</p></div><div><div class="big">Arteris</div><p>encostas e taludes de rodovias</p></div></div></div>
-      <div class="af" style="--k:var(--c-agr)">
+    <div class="cn"></div>
+    <div class="sg"><svg class="ai" viewBox="0 0 48 48"><rect x="9" y="4" width="30" height="40" rx="2"/><path d="M15 11h18M15 17h18M15 23h18"/><circle cx="33" cy="36" r="2"/><path d="M15 36h8"/></svg><span class="tg">Na sala técnica</span><b class="hd">Quadro inteligente Nouvenn</b><ul><li>M31: entradas analógicas e E/S digitais</li><li>Conversor RS&#8209;485/Ethernet</li><li>Roteador industrial e no&#8209;break</li></ul><div class="chips"><span>Modbus RTU/TCP</span><span>4-20 mA</span><span>Relés</span></div></div>
+    <div class="cn"></div>
+    <div class="sg net"><svg class="ai" viewBox="0 0 48 48"><path d="M24 20 16 44M24 20l8 24M19 34h10M18 39h12"/><circle cx="24" cy="17" r="2.5"/><path d="M16.5 10a10 10 0 0 0 0 14M31.5 10a10 10 0 0 1 0 14M11 5a17 17 0 0 0 0 24M37 5a17 17 0 0 1 0 24"/></svg><span class="tg">Conectividade</span><b class="hd">Rede Vivo com VPN</b><div class="chips"><span>LTE primário</span><span>Satélite ou fibra de backup</span></div><ul><li>Túnel criptografado até a plataforma</li></ul></div>
+    <div class="cn"></div>
+    <div class="sg plat"><svg class="ai" viewBox="0 0 48 48"><rect x="7" y="6" width="34" height="11" rx="2"/><rect x="7" y="19" width="34" height="11" rx="2"/><rect x="7" y="32" width="34" height="11" rx="2"/><path d="M13 11.5h2M13 24.5h2M13 37.5h2M30 11.5h6M30 24.5h6M30 37.5h6"/></svg><span class="tg">Nouvenn</span><b class="hd">OMNICORTEX e Gateway Server</b><ul><li>Servidor OPC UA, conversão de protocolos</li><li>Gestão de roteadores (NMS, SNMP)</li><li>Alarmes, eventos e relatórios</li></ul></div>
+    <div class="cn"></div>
+    <div class="cli">
+      <div class="sg"><span class="tg">Automação (OT)</span><b class="hd">SCADA e historiador</b><ul><li>Cliente OPC UA, sem driver novo</li></ul></div>
+      <div class="sg"><span class="tg">Infraestrutura (TI)</span><b class="hd">NOC do cliente</b><ul><li>Saúde dos links e roteadores (ex.: Zabbix)</li></ul></div>
+      <div class="sg"><span class="tg">Equipe de campo</span><b class="hd">Field Work App</b><ul><li>Comissionamento e diagnóstico</li></ul></div>
+    </div>
+  </div>
+  <div class="out4 rv" style="--d:2"><div><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M8 20h8M12 16v4M6 12l3-3 3 2 5-5"/></svg>Monitoramento remoto de ativos</div><div><svg viewBox="0 0 24 24"><path d="M6 16V11a6 6 0 0 1 12 0v5l2 2H4z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg>Alarmes e eventos operacionais</div><div><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0 5 5l-9.4 9.4a2.1 2.1 0 0 1-3-3l9.4-9.4a4 4 0 0 0-2-2z"/></svg>Comissionamento e gestão de campo</div><div><svg viewBox="0 0 24 24"><path d="M4 20h16M7 16v-5M12 16V6M17 16v-8"/></svg>Dashboards, histórico e relatórios</div></div>
+  <aside class="notes">Arquitetura do quadro inteligente, da esquerda para a direita.
+Campo: o que o cliente já tem. Sensores (pressão, nível, temperatura, corrente), equipamentos com Modbus (multimedidor, inversor, CLP) e cargas que a Nouvenn pode comandar.
+Quadro: o mesmo do slide "O quadro de ativos", no bloco Como entregamos. M31 para os sinais, conversor RS-485 para o Modbus, roteador industrial e no-break.
+Rede: LTE da Vivo como link principal, com VPN. Satélite ou fibra como backup onde a operação exige.
+Nouvenn: OMNICORTEX para o operador e o Gateway Server, que entrega os dados por OPC UA e gerencia os roteadores por SNMP.
+Cliente: o SCADA (ex.: iFIX, Proficy Historian) lê por OPC UA, o NOC acompanha links e roteadores, e a equipe de campo usa o Field Work App.
+Cenários típicos: CLP, inversor de frequência, módulos de I/O e grupo gerador.</aside>
+</section>
+<section class="s tint2" id="svc-agro" data-block="1" data-title="Serviço 4 · Monitoramento agroclimático">
+  <span class="lbl svn rv"><i style="--k:var(--c-agr)"></i>Serviço 4 de 5 · Monitoramento agroclimático</span>
+  <h2 class="t rv" style="font-size:48px">Clima, solo e nível de rios com estação própria e energia solar</h2>
+  <div class="svx rv" style="--d:1"><p class="rs">A estação mede o tempo e o solo no campo e envia pela rede Vivo, sem tomada. Os dados chegam ao painel com alertas por limite e aos sistemas do cliente por API.</p><div class="nn"><div><div class="big">201</div><p>cidades do Paraná com alerta de nível de rios</p></div><div><div class="big">Arteris</div><p>encostas e taludes de rodovias monitorados</p></div></div></div>
+  <div class="svaf rv" style="--d:2">
+    <div class="af" style="--k:var(--c-agr)">
         <div class="sg"><svg class="ai" viewBox="0 0 48 48"><path d="M22 44V8"/><path d="M22 10h16M33 7v6M38 8a3 3 0 1 1 0 4"/><rect x="10" y="12" width="8" height="10" rx="1.5"/><rect x="16" y="26" width="12" height="10" rx="1.5"/><path d="M4 38l8-6h0l-2 8z"/><path d="M14 44h16"/></svg><span class="tg">No campo</span><b class="hd">Estação agroclimática Nouvenn</b><ul><li>Vento, chuva, temperatura e umidade</li><li>Painel solar, sem tomada</li></ul></div>
         <div class="cn"></div>
         <div class="sg net"><svg class="ai" viewBox="0 0 48 48"><path d="M24 20 16 44M24 20l8 24M19 34h10M18 39h12"/><circle cx="24" cy="17" r="2.5"/><path d="M16.5 10a10 10 0 0 0 0 14M31.5 10a10 10 0 0 1 0 14M11 5a17 17 0 0 0 0 24M37 5a17 17 0 0 1 0 24"/></svg><span class="tg">Conectividade</span><b class="hd">Rede Vivo LTE</b><div class="chips"><span>LTE</span><span>MQTT</span><span>APN privada</span></div></div>
@@ -1038,23 +1138,86 @@ As duas primeiras linhas (utilidades e ativos) são o centro da conversa de real
         <div class="sg"><svg class="ai" viewBox="0 0 48 48"><path d="M14 34h22a9 9 0 0 0 1-18 12 12 0 0 0-23 3 8 8 0 0 0 0 15z"/><path d="M19 27l-3-3 3-3M29 21l3 3-3 3M26 19l-4 10"/></svg><span class="tg">Integrações</span><b class="hd">Sistemas do cliente</b><div class="chips"><span>API</span><span>Banco de dados</span><span>Webhook</span></div><ul><li>Defesa civil, operação da rodovia, ERP agrícola</li></ul></div>
         <div class="opt3m"><span>Módulos opcionais</span><div><b>Solo e plantação:</b> umidade do solo e ponto de orvalho</div><div><b>Clima expandido:</b> UV, radiação solar, visibilidade e GPS</div><div><b>Rios:</b> nível por sensor ultrassônico ou radar</div></div>
       </div>
-    </div>
   </div>
-  <aside class="notes">Duas frentes fora de real estate, para o vendedor que atende prefeituras, concessionárias de PPP, agronegócio e rodovias.
-Iluminação: com NB-IoT, cada controlador de luminária (SLC) é uma linha Vivo. Onde não há cobertura, as opções em malha (Zigbee e Wi-SUN) usam um gateway com conexão celular. Prêmio Parceiro Responsável ENEL 2023/2024 e atestado de capacidade técnica da ENEL X (Luz de Caruaru).
-Agroclimático: cada estação usa uma linha LTE da Vivo, em APN privada, com MQTT. O cliente escolhe os módulos que quer medir, e os dados chegam aos sistemas dele por API.
-Os conectores animados mostram o caminho do dado, da esquerda para a direita.</aside>
+  <aside class="notes">Para o vendedor que atende agronegócio, concessionárias de rodovia e defesa civil. Cada estação usa uma linha LTE da Vivo, em APN privada, com MQTT.
+O cliente escolhe os módulos: solo e plantação, clima expandido e nível de rios.</aside>
+</section>
+<section class="s tint2" id="svc-esp" data-block="1" data-title="Serviço 5 · Projetos especiais">
+  <span class="lbl svn rv"><i style="--k:var(--c-esp)"></i>Serviço 5 de 5 · Projetos especiais</span>
+  <h2 class="t rv" style="font-size:48px">Projetos especiais: estacionamento automatizado e um painel único para o prédio inteiro</h2>
+  <div class="svx rv" style="--d:1"><p class="rs">Quando o cliente tem vários sistemas que não conversam, a Nouvenn junta tudo numa tela: acesso e presença no estacionamento, iluminação, alarmes, consumo e automação, com a mesma conectividade Vivo.</p><div class="nn"><div><div class="big">1</div><p>painel para luminotécnica, alarmística, consumo e automação</p></div><div><div class="big">Vaga a vaga</div><p>presença e acesso no estacionamento</p></div></div></div>
+  <div class="svaf rv" style="--d:2">
+    <div class="af" style="--k:var(--c-esp)">
+        <div class="fld3 two">
+          <div class="sg"><svg class="ai" viewBox="0 0 48 48"><rect x="6" y="6" width="36" height="36" rx="5"/><path d="M19 34V14h7a6 6 0 0 1 0 12h-7"/></svg><span class="tg">Estacionamento</span><b class="hd">Acesso e presença</b><ul><li>Sensor de presença por vaga</li><li>Cancela e controle de acesso</li></ul></div>
+          <div class="sg"><svg class="ai" viewBox="0 0 48 48"><path d="M8 44V8h20v36M28 18h12v26M4 44h40M14 15h8M14 22h8M14 29h8M14 36h8"/></svg><span class="tg">Prédio</span><b class="hd">Sistemas que já existem</b><ul><li>Iluminação, alarmes, medidores e automação</li></ul></div>
+        </div>
+        <div class="cn"></div>
+        <div class="sg"><svg class="ai" viewBox="0 0 48 48"><rect x="6" y="16" width="36" height="20" rx="3"/><path d="M14 36v5M34 36v5M13 26h2M20 26h2M27 26h8"/><path d="M18 10a9 9 0 0 1 12 0M14 6a15 15 0 0 1 20 0"/></svg><span class="tg">Solução Nouvenn</span><b class="hd">Gateway e quadro Nouvenn</b><ul><li>Junta sensores e sistemas de fabricantes diferentes</li><li>Modbus, contato seco e OPC UA</li></ul></div>
+        <div class="cn"></div>
+        <div class="sg net"><svg class="ai" viewBox="0 0 48 48"><path d="M24 20 16 44M24 20l8 24M19 34h10M18 39h12"/><circle cx="24" cy="17" r="2.5"/><path d="M16.5 10a10 10 0 0 0 0 14M31.5 10a10 10 0 0 1 0 14M11 5a17 17 0 0 0 0 24M37 5a17 17 0 0 1 0 24"/></svg><span class="tg">Conectividade</span><b class="hd">Rede Vivo</b><div class="chips"><span>LTE</span><span>VPN</span></div><ul><li>Sem depender da rede do prédio</li></ul></div>
+        <div class="cn"></div>
+        <div class="sg plat"><svg class="ai" viewBox="0 0 48 48"><rect x="4" y="7" width="40" height="28" rx="2.5"/><path d="M4 16h40M16 16v19M16 41h16M24 35v6"/><path d="M22 23h16M22 29h10"/></svg><span class="tg">NOUMIND</span><b class="hd">Painel único de integração</b><ul><li>Luminotécnica e alarmística</li><li>Consumo e automação</li><li>Ocupação das vagas</li></ul></div>
+        <div class="cn"></div>
+        <div class="sg"><svg class="ai" viewBox="0 0 48 48"><circle cx="17" cy="15" r="6"/><circle cx="33" cy="17" r="5"/><path d="M5 40c1-8 6-12 12-12s11 4 12 12M28 40c.5-6 3-9 6-9s7 3 8 9"/></svg><span class="tg">Para o cliente</span><b class="hd">Operação</b><ul><li>Central, portaria e manutenção numa tela só</li></ul></div>
+      </div>
+  </div>
+  <aside class="notes">Projetos desenhados para o cliente, com hardware, firmware e plataforma da Nouvenn.
+Estacionamento: sensor de presença por vaga e controle de acesso, com a ocupação no painel.
+Painel único de integração: luminotécnica, alarmística, consumo e automação na mesma tela.
+Outro exemplo de projeto especial já entregue: rede privativa para veículos autônomos da Stellantis.</aside>
 </section>
 
-<!-- ================= BLOCO 2 ================= -->
-<section class="s div2" id="b2" data-block="2" data-title="Bloco 2 · O setor">
-  <div class="txt"><span class="n rv">Bloco 2 de 5</span><h1 class="rv" style="--d:1">O setor</h1><p class="rv" style="--d:2">Tamanho do mercado, quem decide e onde a perda acontece.</p></div>
+<!-- ================= BLOCO 2 · CONTEXTO, MERCADO E SETOR ================= -->
+<section class="s div2" id="b2" data-block="2" data-title="Bloco 2 · Contexto, mercado e setor">
+  <div class="txt"><span class="n rv">Bloco 2 de 5</span><h1 class="rv" style="--d:1">Contexto, mercado e setor</h1><p class="rv" style="--d:2">Como a conta é dividida hoje, o que mudou em 2026, o tamanho do mercado e quem decide.</p></div>
   <div class="fr rv" style="--d:1"><img class="f" src="assets/ph-aerial.webp" alt="Shopping e torres em construção">
     <img class="sqo" src="assets/sq-c.webp" alt="" style="right:-60px;top:-50px;width:330px">
     <img class="sqo" src="assets/sq-a.webp" alt="" style="right:120px;bottom:-40px;width:420px;opacity:.9">
   </div>
   <span class="num rv" style="--d:2">2</span>
   <aside class="notes">Agora o cliente do vendedor: dois mercados dentro da mesma conta.</aside>
+</section>
+<section class="s dark" id="tese" data-block="2" data-title="Quem paga a conta hoje">
+  <img class="wm" src="assets/symbol-white.webp" alt="">
+  <h2 class="t rv">Hoje a conta chega inteira e é dividida <b>por estimativa</b></h2>
+  <p class="lead rv" style="--d:1;margin-top:18px">Exemplo de um shopping de 180 lojas. É assim na maioria dos empreendimentos de varejo e multiuso.</p>
+  <div class="flow3 rv" style="--d:2">
+    <div><div class="big">1</div><p class="mut" style="margin-top:10px">hidrômetro da concessionária para o empreendimento inteiro</p></div>
+    <div class="arr">→</div>
+    <div><div class="big">180</div><p class="mut" style="margin-top:10px">lojas consumindo de formas muito diferentes</p></div>
+    <div class="arr">→</div>
+    <div><div class="big" style="color:#F2C27A">m²</div><p class="mut" style="margin-top:10px">critério do rateio: a área de cada loja, não o que ela gastou</p></div>
+  </div>
+  <div class="who2 rv" style="--d:3">
+    <div><img src="assets/ph-aerial.webp" alt="Torres em construção" style="object-position:50% 12%"><div class="tx"><div class="h"><svg class="i ic"><use href="#i-crane"/></svg>Na obra</div><p>A construtora paga o canteiro inteiro e divide entre frentes e empreiteiros <b>por estimativa</b>.</p></div></div>
+    <div><img src="assets/ph-meters.webp" alt="Hidrômetros de um empreendimento" style="object-position:50% 40%"><div class="tx"><div class="h"><svg class="i ic"><use href="#i-store"/></svg>No imóvel em operação</div><p>A administradora paga o empreendimento inteiro e divide <b>pela área de cada unidade</b>.</p></div></div>
+  </div>
+  <p class="t rv" style="--d:4;margin-top:auto;font-size:36px;max-width:1680px">Nos dois casos, ninguém responde pela diferença entre o que gastou e o que pagou. Sem medir, não há como provar quem gastou nem achar o vazamento.</p>
+  <aside class="notes">Esta é a proposta de valor do deck, dita com um exemplo concreto: um hidrômetro, 180 lojas, rateio por m².
+Embaixo, os dois lados do mesmo problema: na obra, a construtora divide o canteiro por estimativa; no imóvel em operação, a administradora divide por área.
+Frase para o vendedor repetir ao cliente: "ninguém responde pela diferença entre o que gastou e o que pagou".</aside>
+</section>
+<section class="s mist" id="contexto" data-block="2" data-title="O que mudou em 2026">
+  <h2 class="t rv">O que mudou em 2026 para quem paga água e energia</h2>
+  <div class="ledger"><div class="row4 rv" style="--d:1"><div class="big"><span data-count="9.4" data-dec="1" data-prefix="+">+9,4</span>%</div><div><span class="k">Tarifa de energia</span><p>de reajuste médio projetado pela ANEEL em 2026. A inflação esperada é de cerca de 5%.</p><span class="f">ANEEL, InfoTarifas de set/2026</span></div></div><div class="row4 rv" style="--d:2"><div class="big"><span data-count="19.4" data-dec="1">19,4</span>%</div><div><span class="k">Água em São Paulo</span><p>era o nível do Cantareira em jan/2026, o menor em 10 anos. A Sabesp reduziu a pressão à noite e reajustou a tarifa em 6,11%.</p><span class="f">Sabesp, Band, Poder360</span></div></div><div class="row4 rv" style="--d:3"><div class="big">nov/27</div><div><span class="k">Mercado livre de energia</span><p>A partir de 25/11/2027, o comércio em baixa tensão pode escolher o fornecedor. Para negociar, o cliente precisa conhecer o próprio consumo.</p><span class="f">Lei 15.269/2025 e Decreto 13.097/2026</span></div></div><div class="row4 rv" style="--d:4"><div class="big"><span data-count="471.8" data-dec="1">471,8</span> mil</div><div><span class="k">Lançamentos imobiliários</span><p>unidades lançadas em 2025, recorde. Pela Lei 13.312, cada unidade nova já sai com hidrômetro próprio, lido a pé.</p><span class="f">CBIC, Indicadores Imobiliários 4T25</span></div></div></div>
+  <img class="isl rv" style="--d:5" src="assets/isl-cidade.webp" alt="Ilustração isométrica de bairro com prédios, rede elétrica e energia solar">
+  <aside class="notes">Aqui se fala do mundo do cliente, não da Nouvenn.
+Energia: a ANEEL subiu a projeção de 8% (março) para 9,4% (setembro).
+Mercado livre: 92% dos shoppings já compram energia livre. O que muda em 2027 é para o lojista de rua e o pequeno comércio.
+Lei 13.312: obriga o hidrômetro individual, não a leitura remota. É aí que entra a conectividade Vivo.</aside>
+</section>
+<section class="s dark" id="hoje-depois" data-block="2" data-title="Hoje e com medição">
+  <h2 class="t rv">O que muda no dia a dia quando cada ponto é medido</h2>
+  <div class="cmp2 rv" style="--d:1">
+    <div class="hd0"></div><div class="hd1">Hoje</div><div class="hd2">Com VIVO + NOUVENN</div>
+    <div class="k"><svg class="i"><use href="#i-drop"/></svg>Vazamento</div><div class="c1">Aparece na fatura do mês seguinte</div><div class="c2"><svg class="i"><use href="#i-check"/></svg>Aparece no dia seguinte, no ponto exato</div>
+    <div class="k"><svg class="i"><use href="#i-receipt"/></svg>Rateio</div><div class="c1">Pela área de cada loja, e o lojista contesta</div><div class="c2"><svg class="i"><use href="#i-check"/></svg>Pelo consumo medido, com histórico diário</div>
+    <div class="k"><svg class="i"><use href="#i-wrench"/></svg>Manutenção</div><div class="c1">A falha é descoberta pelo usuário</div><div class="c2"><svg class="i"><use href="#i-check"/></svg>Alerta antes da parada, no equipamento certo</div>
+    <div class="k"><svg class="i"><use href="#i-gauge"/></svg>Leitura</div><div class="c1">Uma pessoa passa de porta em porta, uma vez por mês</div><div class="c2"><svg class="i"><use href="#i-check"/></svg>Remota, a cada 15 minutos, pela rede celular</div>
+    <div class="k"><svg class="i"><use href="#i-key"/></svg>Valor do imóvel</div><div class="c1">Condomínio alto, sem como provar eficiência</div><div class="c2"><svg class="i"><use href="#i-check"/></svg>Consumo por loja para mostrar ao investidor</div>
+  </div>
+  <aside class="notes">Pergunta para a sala: "Qual dessas linhas o seu cliente sente hoje?" Anotar as respostas; elas voltam no bloco de casos de uso.</aside>
 </section>
 <section class="s mist" id="mercado" data-block="2" data-title="Mercado-alvo">
   <h2 class="t rv">Dois mercados no mesmo cliente: o imóvel em operação e o imóvel em obra</h2>
@@ -1074,17 +1237,16 @@ Os conectores animados mostram o caminho do dado, da esquerda para a direita.</a
       <p class="mut" style="margin-top:0">Incorporação, construção e facilities</p>
       <div class="g">
         <div><div class="big"><span data-count="471.8" data-dec="1">471,8</span> mil</div><p>unidades lançadas em 2025, 13,9% a mais que em 2024</p></div>
-        <div><div class="big">+<span data-count="2" data-dec="1">2,0</span>%</div><p>de crescimento previsto para a construção em 2026</p></div>
+        <div><div class="big">+<span data-count="1.2" data-dec="1">1,2</span>%</div><p>de crescimento previsto para a construção em 2026</p></div>
         <div><div class="big">R$ <span data-count="280">280</span> bi</div><p>investidos em infraestrutura em 2025</p></div>
         <div><div class="big">R$ <span data-count="60">60</span> bi</div><p>por ano movimentados por empresas de facilities</p></div>
       </div>
     </div>
   </div>
-  <p class="src">Fontes: Abrasce, Censo 2025-2026; CBIC, Indicadores Imobiliários 4T25 e Desempenho da Construção; Abdib; ABRAFAC e Frost & Sullivan.</p>
+  <p class="src">Fontes: Abrasce, Censo 2025-2026; CBIC, Indicadores Imobiliários 4T25 e Desempenho da Construção; Abdib; ABRAFAC, via Redirection International.</p>
   <aside class="notes">Shopping: 92% já compram energia no mercado livre (Abrasce). A energia já tem gestão profissional; o argumento em shopping é rateio justo e prova de consumo, não tarifa.
-Construção: recorde de lançamentos mesmo com juros altos.</aside>
+Construção: recorde de lançamentos mesmo com juros altos. A CBIC previa 2% de crescimento em 2026 e revisou para 1,2% em maio, por causa dos custos.</aside>
 </section>
-
 <section class="s mist" id="edificios" data-block="2" data-title="Edifícios e condomínios">
   <h2 class="t rv">Edifícios gastam metade da energia do país, e quem paga a conta já está no limite</h2>
   <div class="ed">
@@ -1101,7 +1263,6 @@ Medição individual: TCC de Engenharia Civil da UFPB (2025), 18 condomínios ve
 Obra: estudo em três obras de Maringá; outros estudos brasileiros acham de 0,14 a 0,38 m³/m². Para uma torre de 20 mil m², são de 4 a 5 mil m³ de água no canteiro.
 Mensagem: condomínio caro e inadimplência alta são a dor do síndico e da administradora; medição individual reduz consumo e dá o número para cobrar de quem gastou.</aside>
 </section>
-
 <section class="s dark vv" id="tamanho" data-block="2" data-title="Tamanho da oportunidade">
   <img class="wm" src="assets/symbol-white.webp" alt="">
   <h2 class="t rv">Cada ponto medido é uma linha de conectividade Vivo que se paga todo mês</h2>
@@ -1118,7 +1279,6 @@ Mensagem: condomínio caro e inadimplência alta são a dor do síndico e da adm
 250 mil = 124,7 mil lojas × 2 utilidades = 249,4 mil. É ordem de grandeza, não meta.
 Crescimento Vivo: 9,465 ÷ 8,178 = 1,157, ou seja, +15,7%.</aside>
 </section>
-
 <section class="s tint2" id="cadeia" data-block="2" data-title="A cadeia e as dores">
   <h2 class="t rv">Seis tipos de empresa decidem, pagam ou operam o consumo do mesmo imóvel</h2>
   <div class="chain">
@@ -1136,7 +1296,7 @@ Facilities é quem usa mais serviços, porque é quem pode levar a solução par
 Medição: NOUVENN SPC Manager. Ativos: NOUVENN OMNICORTEX. Integração: NOUVENN Gateway Manager. Iluminação: NLM.</aside>
 </section>
 
-<!-- ================= BLOCO 3 ================= -->
+<!-- ================= BLOCO 3 · CASOS DE USO ================= -->
 <section class="s div2" id="b3" data-block="3" data-title="Bloco 3 · Casos de uso">
   <div class="txt"><span class="n rv">Bloco 3 de 5</span><h1 class="rv" style="--d:1">Casos de uso</h1><p class="rv" style="--d:2">Cinco situações reais e o que a Nouvenn instala em cada uma.</p></div>
   <div class="fr rv" style="--d:1"><img class="f" src="assets/ph-meters.webp" alt="Hidrômetros em barrilete">
@@ -1166,7 +1326,6 @@ Medição: NOUVENN SPC Manager. Ativos: NOUVENN OMNICORTEX. Integração: NOUVEN
 A linha de total mostra que a fatura é a mesma nos dois critérios; só muda quem paga.
 Conta: fatura = soma do consumo × R$ 20. Por área, cada loja paga fatura × área da loja ÷ área total. Por medição, consumo × R$ 20.</aside>
 </section>
-
 <section class="s mist" id="casos" data-block="3" data-title="Cinco casos de uso">
   <h2 class="t rv" style="font-size:50px">Cinco situações reais e o que a Nouvenn instala em cada uma</h2>
   <div class="ctabs rv" style="--d:1" id="cTabs"><button data-i="0" class="sel">Caso 1 · Água por loja</button><button data-i="1">Caso 2 · Energia por sistema</button><button data-i="2">Caso 3 · Equipamentos críticos</button><button data-i="3">Caso 4 · Canteiro de obra</button><button data-i="4">Caso 5 · Carteira de prédios</button></div>
@@ -1176,7 +1335,6 @@ Conta: fatura = soma do consumo × R$ 20. Por área, cada loja paga fatura × á
       <section style="--d:2"><span class="k">O problema</span><p>A água é dividida pela área de cada loja. Uma operação de praça de alimentação gasta várias vezes mais que uma loja de roupas do mesmo tamanho e paga quase o mesmo. O lojista contesta, atrasa, e a administradora não tem como provar o número.</p></section>
       <section style="--d:3"><span class="k">O que instalamos</span><p>Um hidrômetro com saída de pulso por loja, ligado a um SPC Nouvenn que envia a leitura pela rede celular Vivo. Se o hidrômetro não tiver pulso, o AquaCap lê o movimento do medidor sem trocá-lo. Não é preciso passar cabo no shopping.</p></section>
       <section class="res"><span class="k">O resultado</span><p>Rateio pelo consumo real, com histórico diário de cada loja. Vazamento interno aparece no dia seguinte.</p></section>
-      <p class="cmpn">Componentes: SPC ou AquaCap Nouvenn, NB-IoT ou LTE-M Vivo, NOUVENN SPC Manager.</p>
     </div></div>
     </div><div class="cpane" data-i="1">
       <div class="vis"><img class="f ct" src="assets/isl-cidade.webp" alt="Ilustração isométrica de prédios com rede elétrica"><img class="sqo" src="assets/sq-c.webp" alt="" style="left:-40px;top:-36px;width:200px"><div class="fact2">Segundo a Abrasce (2013), a energia pode chegar a 45% do condomínio de um shopping, e o ar-condicionado responde por 50% a 60% dela.</div></div>
@@ -1184,7 +1342,6 @@ Conta: fatura = soma do consumo × R$ 20. Por área, cada loja paga fatura × á
       <section style="--d:2"><span class="k">O problema</span><p>A energia é o maior item do condomínio e chega numa fatura só. Ninguém sabe quanto é ar-condicionado das áreas comuns, quanto é estacionamento e quanto é loja ligada fora do horário. Sem essa separação, qualquer meta de economia é chute.</p></section>
       <section style="--d:3"><span class="k">O que instalamos</span><p>Medidores de energia com saída Modbus nos quadros das lojas e das áreas comuns. O Nouvenn Gateway junta as leituras e envia à plataforma pela conexão Vivo.</p></section>
       <section class="res"><span class="k">O resultado</span><p>Consumo por loja e por sistema, aviso antes de passar da demanda contratada e lista de cargas ligadas fora do horário.</p></section>
-      <p class="cmpn">Componentes: medidores Modbus RTU, NOUVENN Gateway Manager, conectividade Vivo, NOUVENN SPC Manager.</p>
     </div></div>
     </div><div class="cpane" data-i="2">
       <div class="vis"><img class="f ct" src="assets/quadro-ativos.webp" alt="Quadro Nouvenn de monitoramento de ativos"><img class="sqo" src="assets/sq-c.webp" alt="" style="left:-40px;top:-36px;width:200px"></div>
@@ -1192,7 +1349,6 @@ Conta: fatura = soma do consumo × R$ 20. Por área, cada loja paga fatura × á
       <section style="--d:2"><span class="k">O problema</span><p>A falha é descoberta por quem usa: a loja sem energia, a praça de alimentação sem ar-condicionado, o elevador parado no sábado. A manutenção fica sabendo pelo chamado.</p></section>
       <section style="--d:3"><span class="k">O que instalamos</span><p>Sensores de tensão, corrente e temperatura nos quadros, casas de bomba e centrais de água gelada, com regra de alarme por equipamento no OMNICORTEX.</p></section>
       <section class="res"><span class="k">O resultado</span><p>Aviso antes da parada, técnico enviado ao equipamento certo e histórico de cada máquina para seguro, fabricante e auditoria.</p></section>
-      <p class="cmpn">Componentes: quadro Nouvenn com M31, conversor RS-485/Ethernet, roteador e no-break; sensores; conectividade Vivo; NOUVENN OMNICORTEX.</p>
     </div></div>
     </div><div class="cpane" data-i="3">
       <div class="vis"><img class="f " src="assets/ph-aerial.webp" alt="Obras de torres residenciais vistas do alto"><img class="sqo" src="assets/sq-c.webp" alt="" style="left:-40px;top:-36px;width:200px"></div>
@@ -1200,15 +1356,13 @@ Conta: fatura = soma do consumo × R$ 20. Por área, cada loja paga fatura × á
       <section style="--d:2"><span class="k">O problema</span><p>A construtora recebe uma conta única do canteiro e divide entre empreiteiros por estimativa. Ligação irregular, mangueira aberta no fim de semana e vazamento enterrado só aparecem na conta do mês seguinte.</p></section>
       <section style="--d:3"><span class="k">O que instalamos</span><p>Medição por frente de serviço, torre, alojamento e central de concreto com SPC Nouvenn. Em obra não há rede de dados nem energia em todos os pontos; a rede celular Vivo é a única disponível.</p></section>
       <section class="res"><span class="k">O resultado</span><p>Custo de água e energia por frente e por empreiteiro, base para o rateio do contrato, e aviso no mesmo dia quando há consumo fora do turno.</p></section>
-      <p class="cmpn">Componentes: SPC Nouvenn, hidrômetro e medidor com pulso, NB-IoT, LTE-M ou 4G Vivo, NOUVENN SPC Manager.</p>
     </div></div>
     </div><div class="cpane" data-i="4">
-      <div class="vis"><img class="f ct" src="assets/scr-spc1.webp" alt="Tela da plataforma Nouvenn SPC Manager"><img class="sqo" src="assets/sq-c.webp" alt="" style="left:-40px;top:-36px;width:200px"></div>
+      <div class="vis"><img class="f" src="assets/ph-city.webp" alt="Vista aérea de uma cidade com muitos prédios à noite" style="object-position:62% 50%"><img class="sqo" src="assets/sq-c.webp" alt="" style="left:-40px;top:-36px;width:200px"></div>
       <div><span class="lbl">Caso 5 · gestora de facilities</span><h3>Com todos os prédios num painel, a gestora compara edifícios e comprova o que economizou</h3><div class="ucx">
       <section style="--d:2"><span class="k">O problema</span><p>A gestora cuida de dezenas de prédios de clientes diferentes, cada um com planilha e relatório manual. Não consegue comparar dois prédios parecidos nem mostrar ao contratante quanto economizou.</p></section>
       <section style="--d:3"><span class="k">O que instalamos</span><p>A mesma medição em todos os prédios, conectividade Vivo gerenciada e uma plataforma organizada por contrato, prédio e sistema, com acesso separado por cliente.</p></section>
       <section class="res"><span class="k">O resultado</span><p>Comparação direta entre prédios, relatório automático por contrato e números para provar o resultado ao contratante.</p></section>
-      <p class="cmpn">Componentes: SPC Nouvenn e OMNICORTEX, Gateway Manager onde há automação predial, conectividade Vivo gerenciada, Field Work App.</p>
     </div></div>
     </div>
   <aside class="notes">Use → e ← para passar pelos cinco casos; depois do quinto, → segue para o próximo slide.
@@ -1234,7 +1388,7 @@ Caso 5 · Carteira de prédios: É o caso que mais multiplica conexões: uma dec
   <aside class="notes">Fecha o bloco de casos. Perguntar à sala qual benefício cada um usaria com a própria carteira.</aside>
 </section>
 
-<!-- ================= BLOCO 4 ================= -->
+<!-- ================= BLOCO 4 · COMO ENTREGAMOS ================= -->
 <section class="s div2" id="b4" data-block="4" data-title="Bloco 4 · Como entregamos">
   <div class="txt"><span class="n rv">Bloco 4 de 5</span><h1 class="rv" style="--d:1">Como entregamos</h1><p class="rv" style="--d:2">O dispositivo, a rede Vivo, a plataforma e a instalação em campo.</p></div>
   <div class="fr rv" style="--d:1"><img class="f" src="assets/ph-pumps.webp" alt="Casa de bombas e central de água gelada">
@@ -1282,7 +1436,6 @@ Ativos, em detalhe:
 - Gateway-Eco: menos entradas e saídas, funciona só a bateria; para locais sem energia elétrica.
 Todos operam por LTE ou NB-IoT.</aside>
 </section>
-
 <section class="s dark" id="noumind" data-block="4" data-title="Ecossistema NOUMIND">
   <h2 class="t rv">Ecossistema NOUMIND: uma base para todos os serviços, aplicações para cada um</h2>
   <div class="eco">
@@ -1314,7 +1467,6 @@ De baixo para cima: dispositivos (Nouvenn ou de outros fabricantes), a base NOUM
 SentinAI: observabilidade, integração com operadoras e gestão de conectividade. MDA (Meter Data Analytics): montagem de modelos, testes estatísticos e tendências com IA e ML.
 À direita, o que sustenta tudo: cibersegurança, operação de campo e serviços de observabilidade.</aside>
 </section>
-
 <section class="s" id="leitura" data-block="4" data-title="Três formas de ler o medidor">
   <h2 class="t rv">Medição de utilidades: três formas de ler o medidor, conforme o que já está instalado</h2>
   <div class="opt3">
@@ -1328,7 +1480,6 @@ AquaCap: para hidrômetros sem saída de pulso; lê o movimento do medidor.
 NIC: módulo embarcado no próprio medidor, para medidores inteligentes novos.
 Em shopping com hidrômetros antigos, AquaCap evita trocar o medidor. Em obra nova, NIC já sai no medidor.</aside>
 </section>
-
 <section class="s" id="quadro" data-block="4" data-title="O quadro de ativos">
   <h2 class="t rv">Monitoramento de ativos: o quadro Nouvenn que vai para o campo</h2>
   <div class="qd">
@@ -1363,38 +1514,6 @@ Em shopping com hidrômetros antigos, AquaCap evita trocar o medidor. Em obra no
 Os números marcam: 1 inversor, 2 proteção (DPS e disjuntor), 3 no-break, 4 M31, 5 roteador, 6 conversor RS-485/Ethernet, 7 relés de interface.
 Mensagem para o vendedor: a Nouvenn entrega o quadro montado, instala e opera.</aside>
 </section>
-
-<section class="s tint2" id="ativos-arq" data-block="4" data-title="Ativos: do campo ao sistema do cliente">
-  <h2 class="t rv" style="font-size:50px">Monitoramento de ativos: do sinal de campo ao SCADA e ao NOC do cliente</h2>
-  <div class="af aa rv" style="--d:1;--k:var(--c-ati)">
-    <div class="sg fldc"><span class="tg">No campo</span><b class="hd">O que o cliente já tem</b>
-      <div class="gp"><b>Sensores e sinais</b><span>pressão, nível, temperatura, corrente; 4-20 mA e digitais</span></div>
-      <div class="gp"><b>Equipamentos</b><span>multimedidor, inversor, soft starter, CLP, RS-485 e Modbus</span></div>
-      <div class="gp"><b>Cargas e circuitos</b><span>contator, alimentadores e iluminação, comandados por relé</span></div>
-    </div>
-    <div class="cn"></div>
-    <div class="sg"><svg class="ai" viewBox="0 0 48 48"><rect x="9" y="4" width="30" height="40" rx="2"/><path d="M15 11h18M15 17h18M15 23h18"/><circle cx="33" cy="36" r="2"/><path d="M15 36h8"/></svg><span class="tg">Na sala técnica</span><b class="hd">Quadro inteligente Nouvenn</b><ul><li>M31: entradas analógicas e E/S digitais</li><li>Conversor RS&#8209;485/Ethernet</li><li>Roteador industrial e no&#8209;break</li></ul><div class="chips"><span>Modbus RTU/TCP</span><span>4-20 mA</span><span>Relés</span></div></div>
-    <div class="cn"></div>
-    <div class="sg net"><svg class="ai" viewBox="0 0 48 48"><path d="M24 20 16 44M24 20l8 24M19 34h10M18 39h12"/><circle cx="24" cy="17" r="2.5"/><path d="M16.5 10a10 10 0 0 0 0 14M31.5 10a10 10 0 0 1 0 14M11 5a17 17 0 0 0 0 24M37 5a17 17 0 0 1 0 24"/></svg><span class="tg">Conectividade</span><b class="hd">Rede Vivo com VPN</b><div class="chips"><span>LTE primário</span><span>Satélite ou fibra de backup</span></div><ul><li>Túnel criptografado até a plataforma</li></ul></div>
-    <div class="cn"></div>
-    <div class="sg plat"><svg class="ai" viewBox="0 0 48 48"><rect x="7" y="6" width="34" height="11" rx="2"/><rect x="7" y="19" width="34" height="11" rx="2"/><rect x="7" y="32" width="34" height="11" rx="2"/><path d="M13 11.5h2M13 24.5h2M13 37.5h2M30 11.5h6M30 24.5h6M30 37.5h6"/></svg><span class="tg">Nouvenn</span><b class="hd">OMNICORTEX e Gateway Server</b><ul><li>Servidor OPC UA, conversão de protocolos</li><li>Gestão de roteadores (NMS, SNMP)</li><li>Alarmes, eventos e relatórios</li></ul></div>
-    <div class="cn"></div>
-    <div class="cli">
-      <div class="sg"><span class="tg">Automação (OT)</span><b class="hd">SCADA e historiador</b><ul><li>Cliente OPC UA, sem driver novo</li></ul></div>
-      <div class="sg"><span class="tg">Infraestrutura (TI)</span><b class="hd">NOC do cliente</b><ul><li>Saúde dos links e roteadores (ex.: Zabbix)</li></ul></div>
-      <div class="sg"><span class="tg">Equipe de campo</span><b class="hd">Field Work App</b><ul><li>Comissionamento e diagnóstico</li></ul></div>
-    </div>
-  </div>
-  <div class="out4 rv" style="--d:2"><div><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M8 20h8M12 16v4M6 12l3-3 3 2 5-5"/></svg>Monitoramento remoto de ativos</div><div><svg viewBox="0 0 24 24"><path d="M6 16V11a6 6 0 0 1 12 0v5l2 2H4z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg>Alarmes e eventos operacionais</div><div><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0 5 5l-9.4 9.4a2.1 2.1 0 0 1-3-3l9.4-9.4a4 4 0 0 0-2-2z"/></svg>Comissionamento e gestão de campo</div><div><svg viewBox="0 0 24 24"><path d="M4 20h16M7 16v-5M12 16V6M17 16v-8"/></svg>Dashboards, histórico e relatórios</div></div>
-  <aside class="notes">Arquitetura do quadro inteligente, da esquerda para a direita.
-Campo: o que o cliente já tem. Sensores (pressão, nível, temperatura, corrente), equipamentos com Modbus (multimedidor, inversor, CLP) e cargas que a Nouvenn pode comandar.
-Quadro: o mesmo da foto do slide anterior. M31 para os sinais, conversor RS-485 para o Modbus, roteador industrial e no-break.
-Rede: LTE da Vivo como link principal, com VPN. Satélite ou fibra como backup onde a operação exige.
-Nouvenn: OMNICORTEX para o operador e o Gateway Server, que entrega os dados por OPC UA e gerencia os roteadores por SNMP.
-Cliente: o SCADA (ex.: iFIX, Proficy Historian) lê por OPC UA, o NOC acompanha links e roteadores, e a equipe de campo usa o Field Work App.
-Cenários típicos: CLP, inversor de frequência, módulos de I/O e grupo gerador.</aside>
-</section>
-
 <section class="s dark" id="plataforma" data-block="4" data-title="Plataforma">
   <h2 class="t rv">O que o cliente vê na plataforma</h2>
   <div class="plat">
@@ -1416,7 +1535,6 @@ Cenários típicos: CLP, inversor de frequência, módulos de I/O e grupo gerado
   <aside class="notes">Clique em cada item à esquerda para trocar a tela.
 Se perguntarem: há ainda o SentinAI (monitora a saúde dos próprios dispositivos) e o MDA (análise de comportamento de equipamentos com IA).</aside>
 </section>
-
 <section class="s" id="diferenciais" data-block="4" data-title="Diferenciais e instalações">
   <h2 class="t rv">Por que a Nouvenn consegue instalar onde outros não conseguem</h2>
   <div class="dfc">
@@ -1442,7 +1560,7 @@ Medidores: água com saída de pulso, gás com emissor (inclusive à prova de ex
 Parcerias de desenvolvimento: Senai CIMATEC (controlador de iluminação e medidor remoto de água e gás) e INATEL (gateway IoT).</aside>
 </section>
 
-<!-- ================= BLOCO 5 ================= -->
+<!-- ================= BLOCO 5 · A OPORTUNIDADE ================= -->
 <section class="s div2 vv" id="b5" data-block="5" data-title="Bloco 5 · A oportunidade">
   <div class="txt"><span class="n rv">Bloco 5 de 5</span><h1 class="rv" style="--d:1">A oportunidade</h1><p class="rv" style="--d:2">Como reconhecer, qualificar e passar para o BDM.</p></div>
   <div class="fr rv" style="--d:1"><img class="f" src="assets/ph-business.webp" alt="Reunião de negócios">
@@ -1474,7 +1592,6 @@ Parcerias de desenvolvimento: Senai CIMATEC (controlador de iluminação e medid
 Resposta em azul-claro = parcialmente certa (resolve, mas não é o melhor caminho).
 1: AquaCap (hidrômetro sem pulso). 2: quadro Nouvenn com M31 e conversor RS-485, no OMNICORTEX. 3: NIC nas casas e SLC nas ruas (duas frentes, um cliente).</aside>
 </section>
-
 <section class="s" id="perguntas" data-block="5" data-title="Seis perguntas">
   <h2 class="t rv">Seis perguntas que cabem numa visita e bastam para a Nouvenn dimensionar</h2>
   <div class="qs">
@@ -1487,22 +1604,6 @@ Resposta em azul-claro = parcialmente certa (resolve, mas não é o melhor camin
   </div>
   <aside class="notes">Nenhuma pergunta exige conhecimento técnico. Com as seis respostas, a pré-venda da Nouvenn devolve a arquitetura e a estimativa.</aside>
 </section>
-
-<section class="s" id="fluxo" data-block="5" data-title="Como acionar">
-  <h2 class="t rv">Do primeiro contato à proposta conjunta em até sete dias úteis</h2>
-  <div class="fl rv" style="--d:1">
-    <div class="fs"><span class="who">Vendedor Vivo</span><div class="h">Reconhece</div><p>Ouve a frase do cliente e faz as seis perguntas.</p><p class="e">Entrega as respostas e a frase do cliente.</p><span class="sla"><svg class="i"><use href="#i-clock"/></svg>Na própria visita</span></div>
-    <div class="arr">→</div>
-    <div class="fs"><span class="who">BDM Vivo IoT</span><div class="h">Valida</div><p>Confirma o caso e a cobertura de sinal e aciona a Nouvenn.</p><p class="e">Entrega a oportunidade com segmento, porte e tipo de conexão.</p><span class="sla"><svg class="i"><use href="#i-clock"/></svg>Até 2 dias úteis</span></div>
-    <div class="arr">→</div>
-    <div class="fs"><span class="who">Pré-vendas Nouvenn</span><div class="h">Desenha</div><p>Dimensiona a solução e monta a arquitetura.</p><p class="e">Entrega arquitetura, lista de materiais, premissas e estimativa.</p><span class="sla"><svg class="i"><use href="#i-clock"/></svg>Até 5 dias úteis</span></div>
-    <div class="arr">→</div>
-    <div class="fs"><span class="who">Vivo e Nouvenn</span><div class="h">Propõem</div><p>A Vivo entra com a conectividade; a Nouvenn com equipamento, plataforma e campo.</p><p class="e">Entrega proposta única, com piloto quando fizer sentido.</p><span class="sla"><svg class="i"><use href="#i-clock"/></svg>Prazo combinado com o cliente</span></div>
-  </div>
-  <p class="band vv rv" style="--d:2">O vendedor não precisa saber a diferença entre NB-IoT e Modbus. Precisa reconhecer o problema, anotar seis respostas e acionar o BDM. A engenharia fica com a Nouvenn.</p>
-  <aside class="notes">Os prazos são compromisso da Nouvenn. Sem o checklist completo, cada rodada de perguntas atrasa a resposta.</aside>
-</section>
-
 <section class="s mist" id="checklist" data-block="5" data-title="Checklist de passagem">
   <h2 class="t rv">Com estes doze itens, a Nouvenn responde sem pedir mais informação</h2>
   <div class="ck">
@@ -1512,7 +1613,6 @@ Resposta em azul-claro = parcialmente certa (resolve, mas não é o melhor camin
   </div>
   <aside class="notes">Usar com uma conta real de alguém da sala, marcando ao vivo. Os itens marcados entram na ficha do próximo slide.</aside>
 </section>
-
 <section class="s" id="ficha" data-block="5" data-title="Ficha para o BDM">
   <h2 class="t rv">Ficha da oportunidade: preencha e copie para o BDM</h2>
   <div class="calc">
@@ -1538,21 +1638,6 @@ Regras da conta:
 - Carteira: prédios × pontos por prédio.
 Total = pontos de medição + equipamentos monitorados.</aside>
 </section>
-
-<section class="s" id="proximos" data-block="5" data-title="Próximos passos">
-  <h2 class="t rv">Três decisões para sair desta reunião</h2>
-  <div class="split" style="grid-template-columns:1fr 640px">
-    <div class="stack3">
-      <div class="it rv" style="--d:1"><span class="n">1</span><div><div class="h">Escolher três contas</div><p>Um shopping em operação, uma incorporadora com obra em andamento e uma gestora de facilities com vários prédios. Visita conjunta, com a Nouvenn na reunião técnica.</p></div></div>
-      <div class="it rv" style="--d:2"><span class="n">2</span><div><div class="h">Treinar o time</div><p>Uma hora sobre as frases do cliente, as seis perguntas e o fluxo de acionamento.</p></div></div>
-      <div class="it rv" style="--d:3"><span class="n">3</span><div><div class="h">Fechar um piloto</div><p>Um empreendimento, uma utilidade, de 30 a 60 pontos e 90 dias, com critério de sucesso combinado antes.</p></div></div>
-    </div>
-    <figure class="ph rv" style="--d:2"><img src="assets/ph-engineers.webp" alt="Equipe de engenharia Nouvenn" style="object-position:50% 30%"><figcaption>Pré-vendas e engenharia Nouvenn na reunião técnica</figcaption></figure>
-  </div>
-  <div class="band vv g rv" style="--d:4;margin-top:36px">A Vivo mantém a relação com o cliente e a conectividade. A Nouvenn responde pelo equipamento, pela plataforma, pela instalação e pela manutenção.</div>
-  <aside class="notes">Não terminar sem nomes: escrever na hora as três contas e quem é responsável por cada uma.</aside>
-</section>
-
 <section class="s" id="fim" data-block="5" data-title="Encerramento">
   <video class="sigh nplay" src="assets/onde-tem-n.webm" muted playsinline preload="auto" aria-label="Onde tem esse N tem solução"></video>
   <p class="q2 rv" style="--d:3">A tecnologia é a ferramenta das grandes mudanças. Nós somos a conexão para torná-las possíveis.</p>
@@ -1563,25 +1648,27 @@ A assinatura animada é a mesma da Apresentação Padrão da Nouvenn.</aside>
 <section class="s" id="fontes" data-block="5" data-title="Fontes">
   <h2 class="t rv" style="font-size:52px">Fontes dos dados de mercado (consultadas em outubro de 2026)</h2>
   <ul class="srcs rv" style="--d:1">
-    <li>Abrasce, Censo 2025-2026: 658 shoppings, 124,7 mil lojas, R$ 201 bi. <a href="https://www.infomoney.com.br/consumo/faturamento-de-shopping-centers-no-brasil-supera-r200-bi-pela-1a-vez/" target="_blank" rel="noopener">InfoMoney</a></li>
+    <li>Abrasce, Censo 2025-2026: 658 shoppings em 253 cidades, 124,7 mil lojas, 95,4% de ocupação, R$ 201 bi. <a href="https://www.infomoney.com.br/consumo/faturamento-de-shopping-centers-no-brasil-supera-r200-bi-pela-1a-vez/" target="_blank" rel="noopener">InfoMoney</a></li>
     <li>Abrasce: 92% dos shoppings compram energia no mercado livre. <a href="https://canalsolar.com.br/92-dos-shoppings-brasileiros-ja-compram-energia-no-mercado-livre" target="_blank" rel="noopener">Canal Solar</a></li>
     <li>Energia em até 45% do condomínio de shopping (Abrasce, 2013). <a href="https://tecnogera.com.br/blog/shoppings-centers-e-a-conta-de-energia/" target="_blank" rel="noopener">Tecnogera</a></li>
     <li>CBIC 4T25: 471.769 unidades lançadas, alta de 13,88%. <a href="https://cbic.org.br/mercado-imobiliario-fechou-quarto-trimestre-de-2025-com-recordes-em-lancamentos-e-vendas/" target="_blank" rel="noopener">CBIC</a></li>
-    <li>CBIC: construção cresceu 1,3% em 2025, previsão de 2,0% em 2026. <a href="https://cbic.org.br/construcao-civil-projeta-2026-mais-positivo-que-2025-impulsionado-por-credito-e-investimentos/" target="_blank" rel="noopener">CBIC</a></li>
+    <li>CBIC: construção cresceu 1,3% em 2025; previsão para 2026 revisada de 2,0% para 1,2% em maio. <a href="https://agenciainfra.com/blog/cbic-reduz-projecao-de-crescimento-na-construcao-para-12-em-2026/" target="_blank" rel="noopener">Agência iNFRA</a></li>
     <li>ANEEL, InfoTarifas set/2026: reajuste médio projetado de 9,4%. <a href="https://cenarioenergia.com.br/2026/09/21/aneel-eleva-projecao-de-reajuste-medio-das-tarifas-de-energia-para-94-em-2026/" target="_blank" rel="noopener">Cenário Energia</a></li>
     <li>Lei 15.269/2025 e Decreto 13.097/2026: mercado livre para o comércio em baixa tensão em 25/11/2027. <a href="https://agenciainfra.com/blog/decreto-fixa-abertura-do-mercado-livre-de-energia-para-novembro-de-2027/" target="_blank" rel="noopener">Agência iNFRA</a></li>
     <li>Cantareira em 19,4% em jan/2026. <a href="https://www.band.com.br/noticias/jornal-da-band/ultimas/crise-hidrica-sabesp-reduz-pressao-e-reservatorios-operam-em-nivel-critico-202601161945" target="_blank" rel="noopener">Band</a>. Sabesp com reajuste de 6,11%. <a href="https://sbtnews.sbt.com.br/noticia/brasil/sp-tarifa-de-agua-vai-aumentar-6-11-em-2026-anuncia-sabesp" target="_blank" rel="noopener">SBT News</a></li>
     <li>Lei 13.312/2016: hidrômetro individual em condomínios novos desde jul/2021. <a href="https://www.em.com.br/emfoco/2026/05/29/ja-entrou-em-vigor-condominios-sao-obrigados-a-instalar-medidores-individuais-de-agua-ate-o-fim-do-ano/" target="_blank" rel="noopener">Estado de Minas</a></li>
     <li>Anatel: 58,8 mi de acessos M2M em jul/2026. <a href="https://teletime.com.br/03/09/2026/mercado-movel-julho-iot-2026/" target="_blank" rel="noopener">Teletime</a>. Vivo: 9,465 mi terminais M2M. <a href="https://teleco.com.br/m2m.asp" target="_blank" rel="noopener">Teleco</a></li>
-    <li>ABRAFAC e Frost & Sullivan: facilities movimenta cerca de R$ 60 bi por ano. <a href="https://abrafac.org.br/abrafac-apresenta-os-numeros-mundiais-do-setor-de-facilities-no-fm-debate/" target="_blank" rel="noopener">ABRAFAC</a></li>
+    <li>Facilities movimenta cerca de R$ 60 bi por ano (Redirection International, com dados da ABRAFAC). <a href="https://lexlegal.com.br/?p=28005" target="_blank" rel="noopener">LexLegal</a></li>
     <li>EPE, Atlas da Eficiência Energética (2019 e 2021): edificações consomem 51% da eletricidade do país. <a href="https://www.osetoreletrico.com.br/?p=29826" target="_blank" rel="noopener">O Setor Elétrico</a>, <a href="https://eixos.com.br/newsletters/brasil-ficou-14-mais-eficiente-energeticamente-em-13-anos/" target="_blank" rel="noopener">eixos</a></li>
     <li>Censo Condominial 2025/2026: 327.248 condomínios, 39 mi de moradores, taxa +24,9% em três anos, inadimplência de 11,95%. <a href="https://www.infomoney.com.br/?p=3149567" target="_blank" rel="noopener">InfoMoney</a>, <a href="https://economicnewsbrasil.com.br/2025/12/21/taxa-condominial-alta-inadimplencia-brasil/" target="_blank" rel="noopener">Economic News Brasil</a></li>
     <li>UFPB (2025), medição individualizada em 18 condomínios de João Pessoa, 21 meses: 15% menos consumo de água. <a href="https://repositorio.ufpb.br/jspui/handle/123456789/37741" target="_blank" rel="noopener">Repositório UFPB</a></li>
     <li>Silva e Violin, Gestão da água em canteiros de obras (EPCC, Unicesumar): 0,20 a 0,25 m³ de água por m² construído. <a href="https://www.unicesumar.edu.br/epcc-2013/wp-content/uploads/sites/82/2016/07/Robson_Rodrigo_da_Silva2.pdf" target="_blank" rel="noopener">Unicesumar</a></li>
+    <li>Abdib, Livro Azul da Infraestrutura 2025: R$ 280 bi investidos em infraestrutura. <a href="https://jornaldebrasilia.com.br/noticias/economia/investimento-em-infraestrutura-chega-a-r-280-bi-em-2025-mas-crescimento-desacelera-diz-estudo/" target="_blank" rel="noopener">Jornal de Brasília</a></li>
     <li>Números da Nouvenn: deck institucional da Nouvenn, confirmados em outubro de 2026.</li>
   </ul>
   <aside class="notes">Slide de apoio para perguntas. Não precisa apresentar.</aside>
 </section>
+
 
  <div id="lb" role="dialog" aria-label="Foto ampliada"><img alt="Instalação ampliada"></div>
 </div>
@@ -1605,7 +1692,7 @@ A assinatura animada é a mesma da Apresentação Padrão da Nouvenn.</aside>
 if(/static/.test(location.search))document.documentElement.classList.add('static');
 const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
 const stage=$('#stage'), S=$$('.s',stage);
-const BLOCKS=['Abertura','Quem é a Nouvenn','O setor','Casos de uso','Como entregamos','A oportunidade'];
+const BLOCKS=['Abertura','Quem é a Nouvenn','Contexto, mercado e setor','Casos de uso','Como entregamos','A oportunidade'];
 const PLAN=[[0,10],[10,22],[22,35],[35,60],[60,70],[70,90]];
 let cur=0;
 const fmtN=(v,d=0)=>v.toLocaleString('pt-BR',{minimumFractionDigits:d,maximumFractionDigits:d});
@@ -1768,7 +1855,7 @@ const MT=[['Operação Ativa','Operação ativa','#0098CC'],['Concessão PPP / C
     e.addEventListener('mouseleave',()=>tip.classList.remove('on'));});
   const cnt={};MAP.pts.forEach(p=>cnt[p.b]=(cnt[p.b]||0)+1);
   const uf={};MAP.pts.filter(p=>p.pais==='Brasil').forEach(p=>uf[p.uf]=(uf[p.uf]||0)+1);
-  $('#mUF').textContent=Object.keys(uf).length;
+  if($('#mUF'))$('#mUF').textContent=Object.keys(uf).length;
 })();
 
 /* arquitetura: linhas animadas entre as colunas */
